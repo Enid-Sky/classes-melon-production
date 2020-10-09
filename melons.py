@@ -32,5 +32,20 @@ class Melon(object):
                                              self.melon_type)
 
 # FIXME: Add Squash class definition here.
+
+
 class Squash(Melon):
-    pass
+    """Winter squash"""
+
+
+def prep_and_paint(self):
+    """Prep and paint the winter squash green"""
+
+    robots.cleanerbot.clean(self)
+    robots.stickerbot.apply_logo(self)
+    robots.painterbot.paint(self)
+
+# ALTERNATIVELY, use super() function to invoke methods defined in parent class:
+
+# super().prep()
+# robots.painterbot.paint(self)
